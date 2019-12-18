@@ -1,0 +1,14 @@
+<h1><span class="marvel">Marvel</span> Vs <span class="head"> DC</span></h1>
+<a href="/creator/new"> <button>Create Creator</button></a>
+<ul>
+    {{#each allCreators}}
+    <a href="/creator/{{_id}}">{{name}}</a>
+    <br>
+    <a href="/creator/{{_id}}"><img src=" {{pic}}"></a>
+    <h4>Age:</h4>
+    <h3>{{age}}</h3>
+    <h4>Characters:</h4>
+    <h3>{{characters}}</h3>
+
+    {{/each}}
+</ul>
