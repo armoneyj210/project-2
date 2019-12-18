@@ -18,7 +18,7 @@ const methodOverride = require("method-override");
  *
  */
 const { comicRouter } = require("./controllers/comic.js");
-
+const { universeRouter } = require("./controllers/universe.js");
 /* Step 3
  *
  * Register middleware...
@@ -61,7 +61,7 @@ app.set("view engine", "hbs");
  */
 
 app.use("/comic", comicRouter);
-
+app.use("/universe", universeRouter);
 /* Step 5
  *
  * Set the port the server is to run on
