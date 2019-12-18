@@ -16,7 +16,7 @@ h1 {
 body {
   font-family: "NFL Dolphins";
   color: gold;
-  float: left;
+
   text-align: center;
   font-size: 3em;
   display: block;
@@ -50,6 +50,6 @@ img {
 .marvel {
   padding-right: 5rem;
 }
-/* .headpic {
+.headpic {
   height: 28rem;
-} */
+}
