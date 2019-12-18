@@ -3,7 +3,7 @@ const Schema = mongoose.Schema;
 
 const CreatorSchema = new Schema({
   name: String,
-  age: String,
+  age: Number,
   characters: String,
   pic: String
 });

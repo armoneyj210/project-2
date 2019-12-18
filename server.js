@@ -62,6 +62,7 @@ app.set("view engine", "hbs");
 
 app.use("/comic", comicRouter);
 app.use("/universe", universeRouter);
+app.use("/creator", creatorRouter);
 /* Step 5
  *
  * Set the port the server is to run on
