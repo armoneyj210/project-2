@@ -8,7 +8,7 @@ comicRouter.get("/", (req, res) => {
   comicApi
     .getComics()
     .then(allComics => {
-      res.render("comics/allComics", { allComics });
+      res.render("comic/allComics", { allComics });
     })
     .catch(error => {
       console.log("Failed to retrieve all Comics");
@@ -17,13 +17,13 @@ comicRouter.get("/", (req, res) => {
     });
 });
 comicRouter.get("/new", (req, res) => {
-  res.render("comics/createComic");
+  res.render("comic/createComic");
 });
 comicRouter.get("/:id/edit", (req, res) => {
   comicApi
     .getComicbyId(req.params.id)
     .then(singleComic => {
-      res.render("comics/editComic", { singleComic });
+      res.render("comic/editComic", { singleComic });
     })
     .catch(error => {
       console.log(error);
@@ -34,7 +34,7 @@ comicRouter.get("/:id", (req, res) => {
   comicApi
     .getComicbyId(req.params.id)
     .then(singleComic => {
-      res.render("comics/singleComic", { singleComic });
+      res.render("comic/singleComic", { singleComic });
     })
     .catch(error => {
       console.log("Failed to retriev comic by Id");
@@ -46,7 +46,7 @@ comicRouter.post("/", (req, res) => {
   comicApi
     .createComic(req.body)
     .then(() => {
-      res.redirect("/comics/");
+      res.redirect("/comic/");
     })
     .catch(error => {
       console.log("Failed to create Comic");
@@ -58,7 +58,7 @@ comicRouter.delete("/:id", (req, res) => {
   comicApi
     .deleteComic(req.params.id)
     .then(() => {
-      res.redirect("/comics");
+      res.redirect("/comic");
     })
     .catch(error => {
       console.log("Failed to delete comic");
@@ -71,7 +71,7 @@ comicRouter.put("/:id", (req, res) => {
   comicApi
     .updateComic(req.params.id, req.body)
     .then(() => {
-      res.redirect(`/comics/${req.params.id}`);
+      res.redirect(`/comic/${req.params.id}`);
     })
     .catch(error => {
       console.log("Failed to update comic");

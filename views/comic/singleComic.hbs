@@ -1,3 +1,4 @@
+<h1>Marvel Vs <span class="head"> DC</span></h1>
 <h5>Name:</h5>
 <div>
   {{singleComic.name}}
@@ -15,11 +16,16 @@
   {{singleComic.firstAppearance}}
 </div>
 <div>
-  {{singleComic.pic}}
+  <div class="pic"><img src="{{singleComic.pic}}"></div>
 </div>
 <form method="POST" action="/comic/{{singleComic._id}}?_method=DELETE">
-  <input type="submit" value="Delete Comic">
+  <a href="/comic/">
+    <button>Delete Charcter</button>
+  </a>
 </form>
 <a href="/comic/{{singleComic._id}}/edit">
-  <button>Edit Comic</button>
+  <button>Edit Charcter</button>
+</a>
+<a href="/comic/">
+  <button> Characters</button>
 </a>

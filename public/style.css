@@ -1,0 +1,48 @@
+* {
+  margin: 0, auto;
+  padding: 0;
+}
+html {
+  background: url("http://media.comicbook.com/2018/02/marvel-vs-dc-twitter-trending-topic-2018-1079944.jpeg")
+    no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+h1 {
+  margin-right: 5rem;
+}
+body {
+  font-family: "NFL Dolphins";
+  color: gold;
+
+  text-align: center;
+  font-size: 3em;
+  display: block;
+  margin: auto;
+}
+
+a {
+  color: gold;
+  margin: auto;
+}
+
+button {
+  margin: auto;
+  margin-top: 1em;
+  display: block;
+  font-family: "NFL Dolphins";
+  padding: 1em;
+  border-radius: 3px;
+  background-color: gold;
+}
+img {
+  width: 30rem;
+}
+.register {
+  font-size: 0.25em;
+}
+.head {
+  padding-left: 10rem;
+}
