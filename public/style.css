@@ -16,7 +16,7 @@ h1 {
 body {
   font-family: "NFL Dolphins";
   color: gold;
-
+  float: left;
   text-align: center;
   font-size: 3em;
   display: block;
