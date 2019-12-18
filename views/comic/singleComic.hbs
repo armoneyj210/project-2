@@ -1,3 +1,25 @@
-<form method="POST" action="<TODO: MODELS URL HERE (e.g: /accounts)>?_method=DELETE">
-  <input type="submit" value="Delete" />
+<h5>Name:</h5>
+<div>
+  {{singleComic.name}}
+</div>
+<h5>Universe:</h5>
+<div>
+  {{singleComic.universe}}
+</div>
+<h5>Description:</h5>
+<div>
+  {{singleComic.description}}
+</div>
+<h5>First Appearance:</h5>
+<div>
+  {{singleComic.firstAppearance}}
+</div>
+<div>
+  {{singleComic.pic}}
+</div>
+<form method="POST" action="/comic/{{singleComic._id}}?_method=DELETE">
+  <input type="submit" value="Delete Comic">
 </form>
+<a href="/comic/{{singleComic._id}}/edit">
+  <button>Edit Comic</button>
+</a>
