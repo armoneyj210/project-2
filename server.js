@@ -19,6 +19,7 @@ const methodOverride = require("method-override");
  */
 const { comicRouter } = require("./controllers/comic.js");
 const { universeRouter } = require("./controllers/universe.js");
+const { creatorRouter } = require("./controllers/creator.js");
 /* Step 3
  *
  * Register middleware...
