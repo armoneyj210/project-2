@@ -1,0 +1,28 @@
+<h1><span class="marvel">Marvel</span> Vs <span class="head"> DC</span></h1>
+<h5>Universe:</h5>
+<div>
+    {{singleUniverse.universe}}
+</div>
+<h5>Description:</h5>
+<div>
+    {{singleUniverse.description}}
+</div>
+<h5>Characters</h5>
+<div>
+    {{singleUniverse.characters}}
+</div>
+
+<div>
+    <div class="pic"><img src="{{singleUniverse.pic}}"></div>
+</div>
+<form method="POST" action="/universe/{{singleUniverse._id}}?_method=DELETE">
+    <a href="/universe/">
+        <button>Delete Charcter</button>
+    </a>
+</form>
+<a href="/universe/{{singleUniverse._id}}/edit">
+    <button>Edit Character</button>
+</a>
+<a href="/universe/">
+    <button> Characters</button>
+</a>
