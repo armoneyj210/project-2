@@ -1,15 +1,17 @@
-<form method="POST" action="<TODO: models url here (e.g: /accounts)>?_method=PUT">
+<form method="POST" action="/comic/{{singleComic._id}}?_method=PUT">
 
   <!--
     Template for creating input form for a string object key called stringMember
     NOTE: for numeric input fields use `type="number"`
-  -->
-  <input type="text" value="{{<TODO: model.stringMember>}}" name="<TODO: stringMember (e.g: name)>" />
-
-  <!--
-    Template for creating input form for a boolean object member
-  -->
-  <input type="checkbox" name="<TODO: booleanMember (e.g: isActive)>" value="true" {{#if <TODO: model.booleanMember (e.g: account.isActive)}}checked{{/if}} />
-
-  <input type="submit" value="Update Shop" />
-</form>
+  --->
+  <label for="comicName">Name</label>
+  <input type="text" value="{{singleComic.name}}" placeholder="name" name="name" id="comicName" />
+  <label for="comicUniverse">Universe</label>
+  <input type="text" value="{{singleComic.universe}}" placeholder="universe" name="universe" id="universe" />
+  <label for="comicDescription">Description</label>
+  <input type="text" name="description" value="{{singleComic.description}}" id="comicDescription" />
+  <label for="comicAppearance">First Appearance</label>
+  <input type="text" name="firstAppearance" value="{{singleComic.firstAppearance}}" id="comicAppearance" />
+  <input type="text" name="pic" value="{{singleComic.pic}}" id="comicPic">
+  <input type="submit" value="Create Comic" />
+</form
