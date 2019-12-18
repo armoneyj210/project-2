@@ -11,7 +11,7 @@ html {
   background-size: cover;
 }
 h1 {
-  margin-right: 5rem;
+  margin-right: 10rem;
 }
 body {
   font-family: "NFL Dolphins";
@@ -39,10 +39,14 @@ button {
 }
 img {
   width: 30rem;
+  border: 10px solid whitesmoke;
 }
 .register {
   font-size: 0.25em;
 }
 .head {
   padding-left: 10rem;
+}
+.marvel {
+  padding-right: 5rem;
 }
