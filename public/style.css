@@ -145,3 +145,8 @@ h1 {
     -1px 1px 0 whitesmoke, 1px 1px 0 whitesmoke;
   margin: 0 auto;
 }
+.all-creator-val {
+  color: black;
+  text-shadow: -1px -1px 0 whitesmoke, 1px -1px 0 whitesmoke,
+    -1px 1px 0 whitesmoke, 1px 1px 0 whitesmoke;
+}
