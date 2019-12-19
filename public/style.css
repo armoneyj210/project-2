@@ -22,7 +22,15 @@ body {
   display: block;
   margin: auto;
 }
+.single-name {
+  font-family: "NFL Dolphins";
+  color: gold;
 
+  text-align: center;
+  font-size: 3em;
+  display: block;
+  margin: auto;
+}
 a {
   color: gold;
   margin: auto;
@@ -129,4 +137,9 @@ h1 {
 .first-appearance {
   padding-left: 3em;
   text-decoration: underline;
+}
+.single-answers {
+  color: black;
+  text-shadow: -1px -1px 0 whitesmoke, 1px -1px 0 whitesmoke,
+    -1px 1px 0 whitesmoke, 1px 1px 0 whitesmoke;
 }
