@@ -5,14 +5,18 @@
     Template for creating input form for a string object key called stringMember
     NOTE: for numeric input fields use `type="number"`
   --->
-    <label for="creator">Creator</label>
-    <input type="text" value="{{singleCreator.name}}" placeholder="creator" name="name" id="creator" />
-    <label for="creatorDescription">Age</label>
-    <input type="text" value="{{singleCreator.age}}" placeholder="description" name="age" id="description" />
-    <label for="creatorCharacters">Characters</label>
-    <input type="text" name="characters" value="{{singleCreator.characters}}" id="creatorCharacters" />
-    <br>
-    <label for="creatorPic">Picture</label>
-    <input type="text" name="pic" value="{{singleCreator.pic}}" id="creatorPic">
-    <input type="submit" value="Save Creator" />
+    <label class="single-head" for="creator">Creator</label>
+    <input class="input-box" type="text" value="{{singleCreator.name}}" placeholder="creator" name="name"
+        id="creator" />
+    <label class="single-head" for="creatorDescription">Age</label>
+    <input class="input-box" type="text" value="{{singleCreator.age}}" placeholder="description" name="age"
+        id="description" />
+    <label class="single-head" for="creatorCharacters">Characters</label>
+    <input class="input-box" type="text" name="characters" value="{{singleCreator.characters}}"
+        id="creatorCharacters" />
+    <br><br><br>
+    <label class="single-head" for="creatorPic">Picture</label>
+    <input class="input-box" type="text" name="pic" value="{{singleCreator.pic}}" id="creatorPic">
+    <br><br>
+    <input class="create-btn" type="submit" value="Save Creator" />
 </form>

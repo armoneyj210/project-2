@@ -1,20 +1,21 @@
 <h1><span class="marvel">Marvel</span> Vs <span class="head"> DC</span></h1>
-<h5>Creator:</h5>
-<div>
+<h4 class="single-head">Creator:</h4>
+<div class="single-answers">
     {{singleCreator.name}}
 </div>
-<h5>Age:</h5>
-<div>
-    {{singleCreator.age}}
-</div>
-<h5>Characters</h5>
-<div>
-    {{singleCreator.characters}}
-</div>
-
 <div>
     <div class="pic"><img src="{{singleCreator.pic}}"></div>
 </div>
+<h4 class="single-head">Age:</h4>
+<div class="single-answers">
+    {{singleCreator.age}}
+</div>
+<h4 class="single-head">Characters</h4>
+<div class="single-answers">
+    {{singleCreator.characters}}
+</div>
+
+
 <form method="POST" action="/creator/{{singleCreator._id}}?_method=DELETE">
     <a href="/creator/">
         <button>Delete Creator</button>
