@@ -136,12 +136,12 @@ h1 {
   padding-left: 3em;
 }
 .first-appearance {
-  padding-left: 3em;
+  margin-left: 4em;
   text-decoration: underline;
 }
 .single-answers {
   color: black;
   text-shadow: -1px -1px 0 whitesmoke, 1px -1px 0 whitesmoke,
     -1px 1px 0 whitesmoke, 1px 1px 0 whitesmoke;
-  margin-right: 1.25em;
+  margin: 0 auto;
 }
