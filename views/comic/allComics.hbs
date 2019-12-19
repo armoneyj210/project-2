@@ -2,17 +2,19 @@
 <a href="/comic/new"> <button>Create Character</button></a>
 <a href="/creator"> <button>Creators</button></a>
 <a href="/universe"> <button>Universes</button></a>
+
+
 <ul>
     {{#each allComics}}
     <a href="/comic/{{_id}}">{{name}}</a>
     <br>
     <a href="/comic/{{_id}}"><img class="headpic" src=" {{pic}}"></a>
     <h4>Universe:</h4>
-    <h3>{{universe}}</h3>
+    <h5>{{universe}}</h5>
     <h4>Description:</h4>
-    <h3>{{description}}</h3>
+    <p class="description">{{description}}</p>
     <h4>First Appearance:</h4>
-    <h3>{{firstAppearance}}</h3>
+    <h5>{{firstAppearance}}</h5>
 
     {{/each}}
 </ul>

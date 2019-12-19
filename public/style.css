@@ -49,7 +49,10 @@ img {
 }
 .marvel {
   padding-right: 5rem;
-  
-.headpic {
+}
+/* .headpic {
   height: 28rem;
+} */
+.description {
+  font-size: 0.75em;
 }
