@@ -75,6 +75,7 @@ img {
   color: black;
   text-shadow: -1px -1px 0 whitesmoke, 1px -1px 0 whitesmoke,
     -1px 1px 0 whitesmoke, 1px 1px 0 whitesmoke;
+  text-decoration: none;
 }
 ul,
 .single-head {
