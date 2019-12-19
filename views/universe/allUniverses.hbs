@@ -1,8 +1,8 @@
 <h1><span class="marvel">Marvel</span> Vs <span class="head"> DC</span></h1>
-
-<a href="/universe/new"> <button>Create Universe</button></a>
-<a href="/creator"> <button>Creators</button></a>
-<a href="/comic"> <button>Characters</button></a>
+<div class="wrapper">
+    <a href="/creator"> <button>Creators</button></a>
+    <a href="/universe/new"> <button>Create Universe</button></a>
+    <a href="/comic"> <button>Characters</button></a>
 </div>
 <ul>
 
@@ -11,9 +11,9 @@
     <br>
     <a href="/universe/{{_id}}"><img src=" {{pic}}"></a>
     <h4>Description:</h4>
-    <h3>{{description}}</h3>
+    <h3 class="all-creator-val">{{description}}</h3>
     <h4>Characters:</h4>
-    <h3>{{characters}}</h3>
+    <h3 class="all-creator-val">{{characters}}</h3>
 
     {{/each}}
 

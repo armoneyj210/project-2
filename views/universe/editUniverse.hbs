@@ -4,15 +4,18 @@
     Template for creating input form for a string object key called stringMember
     NOTE: for numeric input fields use `type="number"`
   --->
-    <label for="universeName">Universe</label>
-    <input type="text" value="{{singleUniverse.universe}}" placeholder="name" name="universe" id="universeName" />
-    <label for="universeDescription">Description</label>
-    <input type="text" value="{{singleUniverse.description}}" placeholder="description" name="description"
-        id="universeDescription" />
-    <label for="universeCharacters">Characters</label>
-    <input type="text" name="characters" value="{{singleUniverse.characters}}" id="universeCharacters" />
-    <br>
-    <label for="universePic">Picture</label>
-    <input type="text" name="pic" value="{{singleUniverse.pic}}" id="universePic">
-    <input type="submit" value="Save Universe" />
+    <label class="single-head" for="universeName">Universe</label>
+    <input class="input-box" type="text" value="{{singleUniverse.universe}}" placeholder="name" name="universe"
+        id="universeName" />
+    <label class="single-head" for="universeDescription">Description</label>
+    <input class="input-box" type="text" value="{{singleUniverse.description}}" placeholder="description"
+        name="description" id="universeDescription" />
+    <label class="single-head" for="universeCharacters">Characters</label>
+    <input class="input-box" type="text" name="characters" value="{{singleUniverse.characters}}"
+        id="universeCharacters" />
+    <br><br><br><br>
+    <label class="single-head" for="universePic">Picture</label>
+    <input class="input-box" type="text" name="pic" value="{{singleUniverse.pic}}" id="universePic">
+    <br><br>
+    <input class="create-btn" type="submit" value="Save Universe" />
 </form>

@@ -5,14 +5,15 @@
     Template for creating input form for a string object key called stringMember
     NOTE: for numeric input fields use `type="number"`
   --->
-    <label for="universe">Universe</label>
-    <input type="text" value="" placeholder="universe" name="universe" id="universe" />
-    <label for="universeDescription">Description</label>
-    <input type="text" value="" placeholder="description" name="description" id="description" />
-    <label for="universeCharacters">Characters</label>
-    <input type="text" name="characters" value="" id="universeCharacters" />
-    <br>
-    <label for="universePic">Picture</label>
-    <input type="text" name="pic" value="" id="universePic">
-    <input type="submit" value="Create Universe" />
+    <label class="single-head" for="universe">Universe</label>
+    <input class="input-box" type="text" value="" placeholder="universe" name="universe" id="universe" />
+    <label class="single-head" for="universeDescription">Description</label>
+    <input class="input-box" type="text" value="" placeholder="description" name="description" id="description" />
+    <label class="single-head" for="universeCharacters">Characters</label>
+    <input class="input-box" placeholder="characters" type="text" name="characters" value="" id="universeCharacters" />
+    <br><br><br><br>
+    <label class="single-head" for="universePic">Picture</label>
+    <input class="input-box" type="text" placeholder="link" name="pic" value="" id="universePic">
+    <br><br>
+    <input class="create-btn" type="submit" value="Create Universe" />
 </form>

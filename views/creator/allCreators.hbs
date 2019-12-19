@@ -1,8 +1,9 @@
 <h1><span class="marvel">Marvel</span> Vs <span class="head"> DC</span></h1>
-<a href="/creator/new"> <button>Create Creator</button></a>
-<a href="/universe"> <button>Universes</button></a>
-<a href="/comic"> <button>Characters</button></a>
-
+<div class="wrapper">
+    <a href="/universe"> <button>Universes</button></a>
+    <a href="/creator/new"> <button>Create Creator</button></a>
+    <a href="/comic"> <button>Characters</button></a>
+</div>
 <ul>
     {{#each allCreators}}
     <a href="/creator/{{_id}}">{{name}}</a>
