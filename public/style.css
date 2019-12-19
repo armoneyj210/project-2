@@ -98,12 +98,13 @@ h1 {
   color: black;
   text-shadow: -1px -1px 0 whitesmoke, 1px -1px 0 whitesmoke,
     -1px 1px 0 whitesmoke, 1px 1px 0 whitesmoke;
-  padding-left: 8em;
+  padding-left: 7em;
 }
 .universe {
   color: black;
   text-shadow: -1px -1px 0 whitesmoke, 1px -1px 0 whitesmoke,
     -1px 1px 0 whitesmoke, 1px 1px 0 whitesmoke;
+  padding-right: 1em;
 }
 .wrapper {
   display: flex;
@@ -142,4 +143,5 @@ h1 {
   color: black;
   text-shadow: -1px -1px 0 whitesmoke, 1px -1px 0 whitesmoke,
     -1px 1px 0 whitesmoke, 1px 1px 0 whitesmoke;
+  margin-right: 1.25em;
 }
