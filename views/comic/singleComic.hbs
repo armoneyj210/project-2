@@ -1,23 +1,24 @@
 <h1><span class="marvel">Marvel</span> Vs <span class="head"> DC</span></h1>
-<h5 class="single-head">Name:</h5>
+<h3 class="single-head">Name:</h3>
 <div class="answers">
-  {{singleComic.name}}
-</div>
-<h5 class="single-head">Universe:</h5>
-<div class="answers">
-  {{singleComic.universe}}
-</div>
-<h5 class="single-head">Description:</h5>
-<div class="answers">
-  {{singleComic.description}}
-</div>
-<h5 class="single-head">First Appearance:</h5>
-<div class="answers">
-  {{singleComic.firstAppearance}}
+  <h4>{{singleComic.name}}</h4>
 </div>
 <div>
   <div class="pic"><img src="{{singleComic.pic}}"></div>
 </div>
+<h3 class="single-head">Universe:</h3>
+<div class="answers">
+  <h4>{{singleComic.universe}}</h4>
+</div>
+<h3 class="single-head">Description:</h3>
+<div class="answers">
+  <p class="description">{{singleComic.description}}</p>
+</div>
+<h3 class="single-head">First Appearance:</h3>
+<div class="answers">
+  <h4>{{singleComic.firstAppearance}}</h4>
+</div>
+
 <form method="POST" action="/comic/{{singleComic._id}}?_method=DELETE">
   <a href="/comic/">
     <button>Delete Charcter</button>
