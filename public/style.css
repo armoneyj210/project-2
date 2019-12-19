@@ -81,6 +81,10 @@ h1 {
 .wrapper {
   display: flex;
 }
+.inner-wrapper {
+  display: flex;
+  margin-top: 2em;
+}
 .flex {
   display: flex;
   padding: 50%, 0, 50%, 5em;
