@@ -1,19 +1,22 @@
 <h1><span class="marvel">Marvel</span> Vs <span class="head"> DC</span></h1>
 <form method="POST" action="/comic/{{singleComic._id}}?_method=PUT">
 
-  <!--
+  <!--clas="single-head" 
     Template for creating input form for a string object key called stringMember
     NOTE: for numeric input fields use `type="number"`
   --->
-  <label for="comicName">Name</label>
-  <input type="text" value="{{singleComic.name}}" placeholder="name" name="name" id="comicName" />
-  <label for="comicUniverse">Universe</label>
-  <input type="text" value="{{singleComic.universe}}" placeholder="universe" name="universe" id="universe" />
-  <label for="comicDescription">Description</label>
-  <input type="text" name="description" value="{{singleComic.description}}" id="comicDescription" />
-  <br>
-  <label for="comicAppearance">First Appearance</label>
-  <input type="text" name="firstAppearance" value="{{singleComic.firstAppearance}}" id="comicAppearance" />
-  <input type="text" name="pic" value="{{singleComic.pic}}" id="comicPic">
+  <label class="single-head" for="comicName">Name</label>
+  <input class="input-box" type="text" value="{{singleComic.name}}" placeholder="name" name="name" id="comicName" />
+  <label class="single-head" for="comicUniverse">Universe</label>
+  <input class="input-box" type="text" value="{{singleComic.universe}}" placeholder="universe" name="universe"
+    id="universe" />
+  <label class="single-head" for="comicDescription">Description</label>
+  <input class="input-box" type="text" name="description" value="{{singleComic.description}}" id="comicDescription" />
+  <br><br><br><br>
+  <label class="single-head" for="comicAppearance">First Appearance</label>
+  <input class="input-box" type="text" name="firstAppearance" value="{{singleComic.firstAppearance}}"
+    id="comicAppearance" />
+  <label class="single-head" for="comicPic">Picture</label>
+  <input class="input-box" type="text" name="pic" value="{{singleComic.pic}}" id="comicPic">
   <input type="submit" value="Create Character" />
 </form
