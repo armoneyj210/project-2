@@ -55,4 +55,6 @@ img {
 } */
 .description {
   font-size: 0.75em;
+  width: 50%;
+  margin: 0 auto;
 }
