@@ -3,14 +3,16 @@
 <a href="/creator"> <button>Creators</button></a>
 <a href="/comic"> <button>Characters</button></a>
 <ul>
-    {{#each allUniverses}}
-    <a href="/universe/{{_id}}">{{universe}}</a>
-    <br>
-    <a href="/universe/{{_id}}"><img src=" {{pic}}"></a>
-    <h4>Description:</h4>
-    <h3>{{description}}</h3>
-    <h4>Characters:</h4>
-    <h3>{{characters}}</h3>
+    <div>
+        {{#each allUniverses}}
+        <a href="/universe/{{_id}}">{{universe}}</a>
+        <br>
+        <a href="/universe/{{_id}}"><img src=" {{pic}}"></a>
+        <h4>Description:</h4>
+        <h3>{{description}}</h3>
+        <h4>Characters:</h4>
+        <h3>{{characters}}</h3>
 
-    {{/each}}
+        {{/each}}
+    </div>
 </ul>
