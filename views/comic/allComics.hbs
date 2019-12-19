@@ -1,23 +1,26 @@
+<h1><span class="marvel">Marvel</span> Vs <span class="head"> DC</span></h1>
 <div class="wrapper">
-    <h1><span class="marvel">Marvel</span> Vs <span class="head"> DC</span></h1>
-    <a href="/comic/new"> <button>Create Character</button></a>
+
     <a href="/creator"> <button>Creators</button></a>
+    <a href="/comic/new"> <button>Create Character</button></a>
     <a href="/universe"> <button>Universes</button></a>
-
-    <div class="inner-wrapper">
-        <ul>
-            {{#each allComics}}
-            <a href="/comic/{{_id}}">{{name}}</a>
-            <br>
-            <a href="/comic/{{_id}}"><img class="headpic" src=" {{pic}}"></a>
-            <h4>Universe:</h4>
-            <h5 class="answers">{{universe}}</h5>
-            <h4>Description:</h4>
-            <p class="description">{{description}}</p>
-            <h4>First Appearance:</h4>
-            <h5 class="answers">{{firstAppearance}}</h5>
-
-            {{/each}}
-        </ul>
-    </div>
+</div>
+<div class="inner-wrapper">
+    <ul>
+        {{#each allComics}}
+        <a href="/comic/{{_id}}">{{name}}</a>
+        <br>
+        <a href="/comic/{{_id}}"><img class="headpic" src=" {{pic}}"></a>
+        <h4>Universe:</h4>
+        <h5 class="answers">{{universe}}</h5>
+        <div class="wrapper">
+            <h4 class="comic-description">Description:</h4>
+            <div class="flex">
+                <p class="description">{{description}}</p>
+                <h4>First Appearance:</h4>
+                <h5 class="answers">{{firstAppearance}}</h5>
+            </div>
+        </div>
+        {{/each}}
+    </ul>
 </div>
