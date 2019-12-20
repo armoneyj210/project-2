@@ -150,3 +150,43 @@ h1 {
   text-shadow: -1px -1px 0 whitesmoke, 1px -1px 0 whitesmoke,
     -1px 1px 0 whitesmoke, 1px 1px 0 whitesmoke;
 }
+.centered {
+  margin: 0 auto;
+  width: 70%;
+  border: 3px solid whitesmoke;
+  padding: 2.5em;
+  text-align: center;
+  border-radius: 5em;
+  font-size: 1.5em;
+  text-shadow: -1px -1px 0 #000, 2px -1px 0 #000, -1px 1px 0 #000,
+    2px 2px 0 #000;
+  background-image: url(https://ak4.picdn.net/shutterstock/videos/4336874/thumb/1.jpg);
+}
+
+.home1:hover {
+  background-image: url(https://i.pinimg.com/originals/bb/ae/d2/bbaed212117a2205c061fd95ab443876.jpg);
+}
+.home2:hover {
+  background: url("https://nerdymindsmagazine.files.wordpress.com/2017/07/marvel-dc.jpg?w=800")
+    no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.home3:hover {
+  background: url("https://nerdymindsmagazine.files.wordpress.com/2017/07/marvel-dc.jpg?w=800")
+    no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.home-background {
+  background: url("https://ak4.picdn.net/shutterstock/videos/4336874/thumb/1.jpg")
+    no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}

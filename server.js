@@ -17,7 +17,7 @@ const methodOverride = require("method-override");
  * import routers from controllers/
  *
  */
-const { homeRouter } = require("./controllers/home.js");
+
 const { comicRouter } = require("./controllers/comic.js");
 const { universeRouter } = require("./controllers/universe.js");
 const { creatorRouter } = require("./controllers/creator.js");
