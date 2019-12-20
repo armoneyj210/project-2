@@ -9,13 +9,13 @@
     <div class="inner-wrapper">
         <ul>
             {{#each allComics}}
-            <h4 class="comic-description underline">{{name}}</h4>
-            <div class="pic-wrapper"><a class="description" href="/comic/{{_id}}">{{description}}</a>
+            <h4 class="comic-description underline"><a href="/comic/{{_id}}">{{name}}</a></h4>
+            <div class="pic-wrapper "> <span class="description"> {{description}}</span></a>
                 <br>
                 <a href="/comic/{{_id}}"><img class="headpic" src=" {{pic}}"></a>
             </div>
-            <h4>Universe:</h4>
-            <h5 class="universe">{{universe}}</h5>
+            <h4 class="underline">Universe</h4>
+            <h5 class="universe ">{{universe}}</h5>
             {{!-- <div class="wrapper"> --}}
 
             <div class="flex">
