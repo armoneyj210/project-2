@@ -1,10 +1,10 @@
 ## Project 2 -Marvel Vs. Dc
 
--[Trello](https://trello.com/b/CI47wR0L/project-2-marvel-vs-dc)
+- [Trello](https://trello.com/b/CI47wR0L/project-2-marvel-vs-dc)
 
--[GitHub](https://github.com/armoneyj210/project-2)
+- [ GitHub](https://github.com/armoneyj210/project-2)
 
--[Deploy-App](https://enigmatic-oasis-06808.herokuapp.com/comic/)
+- [ Deploy-App](https://enigmatic-oasis-06808.herokuapp.com/comic/)
 
 This is a full stack app for cataloguing and editing your favorite Marvel and Dc characters, creators, and the two universes.
 
