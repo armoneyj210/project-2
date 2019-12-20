@@ -17,6 +17,7 @@ const methodOverride = require("method-override");
  * import routers from controllers/
  *
  */
+const { homeRouter } = require("./controllers/home.js");
 const { comicRouter } = require("./controllers/comic.js");
 const { universeRouter } = require("./controllers/universe.js");
 const { creatorRouter } = require("./controllers/creator.js");
@@ -61,8 +62,9 @@ app.set("view engine", "hbs");
  * the paths defined in the router.
  */
 app.get("/", (req, res) => {
-  res.redirect("/home");
+  res.render("home/home");
 });
+// app.use("/home", homeRouter);
 app.use("/comic", comicRouter);
 app.use("/universe", universeRouter);
 app.use("/creator", creatorRouter);
