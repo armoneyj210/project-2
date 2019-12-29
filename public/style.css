@@ -84,6 +84,7 @@ img {
   text-shadow: -1px -1px 0 whitesmoke, 1px -1px 0 whitesmoke,
     -1px 1px 0 whitesmoke, 1px 1px 0 whitesmoke;
   text-decoration: none;
+  padding-top: 0.25em;
 }
 ul,
 .single-head {
@@ -164,7 +165,12 @@ h1 {
 }
 
 .home1:hover {
-  background-image: url(https://i.pinimg.com/originals/bb/ae/d2/bbaed212117a2205c061fd95ab443876.jpg);
+  background: url("https://nerdymindsmagazine.files.wordpress.com/2017/07/marvel-dc.jpg?w=800")
+    no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 .home2:hover {
   background: url("https://nerdymindsmagazine.files.wordpress.com/2017/07/marvel-dc.jpg?w=800")
@@ -183,10 +189,73 @@ h1 {
   background-size: cover;
 }
 .home-background {
-  background: url("https://ak4.picdn.net/shutterstock/videos/4336874/thumb/1.jpg")
+  /* background: url("https://ak4.picdn.net/shutterstock/videos/4336874/thumb/1.jpg")
     no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
-  background-size: cover;
+  background-size: cover; */
+  background-color: whitesmoke;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  height: 75rem;
+  align-items: center;
 }
+
+.home1 {
+  width: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid #000;
+  background-image: radial-gradient(circle, yellow, orange);
+  height: 25%;
+  box-shadow: 0 10px 6px -6px #000;
+  font-family: "permanent marker", cursive;
+}
+.home2 {
+  width: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid #000;
+  background-image: radial-gradient(circle, lightblue, deepskyblue);
+  height: 25%;
+  box-shadow: 0 10px 6px -6px #000;
+  font-family: "permanent marker", cursive;
+}
+
+.home3 {
+  width: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid #000;
+  background-image: radial-gradient(circle, palegreen, yellowgreen);
+  box-shadow: 0 10px 6px -6px #000;
+  height: 25%;
+  font-family: "permanent marker", cursive;
+}
+.background-h {
+  background: url("https://ak4.picdn.net/shutterstock/videos/4336874/thumb/1.jpg");
+}
+.header {
+  background-color: black;
+  width: 100%;
+  height: 1.25em;
+  margin-top: 0;
+  padding-top: 0.5em;
+}
+.home-pad {
+  padding-right: 3.45em;
+  background: black;
+}
+.comic-back {
+  background-image: radial-gradient(circle, palegreen, yellowgreen);
+  border: 10px solid whitesmoke;
+}
+/* .flex-home {
+  display: flex;
+  align-content: center;
+} */
